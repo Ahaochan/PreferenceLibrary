@@ -57,7 +57,6 @@ public class SettingActivity extends AppCompatPreferenceActivity {
                 finish();
             }
         });
-//        EditTextPreference
     }
 
 

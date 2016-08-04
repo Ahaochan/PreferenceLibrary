@@ -39,18 +39,7 @@ import android.widget.TextView;
 import com.ahao.preferencelibrary.R;
 
 
-/**
- * A base class for {@link Preference} objects that are
- * dialog-based. These preferences will, when clicked, open a dialog showing the
- * actual preference controls.
- *
- * @attr ref android.R.styleable#DialogPreference_dialogTitle
- * @attr ref android.R.styleable#DialogPreference_dialogMessage
- * @attr ref android.R.styleable#DialogPreference_dialogIcon
- * @attr ref android.R.styleable#DialogPreference_dialogLayout
- * @attr ref android.R.styleable#DialogPreference_positiveButtonText
- * @attr ref android.R.styleable#DialogPreference_negativeButtonText
- */
+
 public abstract class DialogPreference extends Preference implements
         DialogInterface.OnClickListener, DialogInterface.OnDismissListener,
         PreferenceManager.OnActivityDestroyListener {
@@ -138,7 +127,7 @@ public abstract class DialogPreference extends Preference implements
 
     /**
      * Sets the message of the dialog. This will be shown on subsequent dialogs.
-     * <p/>
+     *
      * This message forms the content View of the dialog and conflicts with
      * list-based dialogs, for example. If setting a custom View on a dialog via
      * {@link #setDialogLayoutResource(int)}, include a text View with ID
@@ -275,7 +264,7 @@ public abstract class DialogPreference extends Preference implements
     /**
      * Prepares the dialog builder to be shown when the preference is clicked.
      * Use this to set custom properties on the dialog.
-     * <p/>
+     *
      * Do not {@link AlertDialog.Builder#create()} or
      * {@link AlertDialog.Builder#show()}.
      */
@@ -333,7 +322,6 @@ public abstract class DialogPreference extends Preference implements
      * is displayed. Default is false. Subclasses should override this method if they need
      * the soft input method brought up automatically.
      *
-     * @hide
      */
     protected boolean needInputMethod() {
         return false;
@@ -366,7 +354,7 @@ public abstract class DialogPreference extends Preference implements
 
     /**
      * Binds views in the content View of the dialog to data.
-     * <p/>
+     *
      * Make sure to call through to the superclass implementation.
      *
      * @param view The content View of the dialog, if it is custom.

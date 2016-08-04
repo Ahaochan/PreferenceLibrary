@@ -25,16 +25,6 @@ import android.widget.Checkable;
 import com.ahao.preferencelibrary.R;
 
 
-/**
- * A {@link android.preference.Preference} that provides checkbox widget
- * functionality.
- * <p/>
- * This preference will store a boolean into the SharedPreferences.
- *
- * @attr ref android.R.styleable#CheckBoxPreference_summaryOff
- * @attr ref android.R.styleable#CheckBoxPreference_summaryOn
- * @attr ref android.R.styleable#CheckBoxPreference_disableDependentsState
- */
 public class CheckBoxPreference extends TwoStatePreference {
 
     public CheckBoxPreference(Context context, AttributeSet attrs, int defStyleAttr) {

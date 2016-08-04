@@ -11,17 +11,7 @@ import android.widget.CompoundButton;
 import com.ahao.preferencelibrary.R;
 
 
-/**
- * A {@link Preference} that provides a two-state toggleable option.
- * <p/>
- * This preference will store a boolean into the SharedPreferences.
- *
- * @attr ref android.R.styleable#SwitchPreference_summaryOff
- * @attr ref android.R.styleable#SwitchPreference_summaryOn
- * @attr ref android.R.styleable#SwitchPreference_switchTextOff
- * @attr ref android.R.styleable#SwitchPreference_switchTextOn
- * @attr ref android.R.styleable#SwitchPreference_disableDependentsState
- */
+
 public class SwitchPreference extends TwoStatePreference {
     private final Listener mListener = new Listener();
 

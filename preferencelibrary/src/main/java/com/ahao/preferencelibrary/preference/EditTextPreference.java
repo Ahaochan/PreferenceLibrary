@@ -33,18 +33,7 @@ import android.widget.EditText;
 
 import com.ahao.preferencelibrary.R;
 
-/**
- * A {@link Preference} that allows for string
- * input.
- * <p/>
- * It is a subclass of {@link DialogPreference} and shows the {@link EditText}
- * in a dialog. This {@link EditText} can be modified either programmatically
- * via {@link #getEditText()}, or through XML by setting any EditText
- * attributes on the EditTextPreference.
- * <p/>
- * This preference will store a string into the SharedPreferences.
- * <p/>
- */
+
 public class EditTextPreference extends DialogPreference {
     /**
      * The edit text shown in the dialog.

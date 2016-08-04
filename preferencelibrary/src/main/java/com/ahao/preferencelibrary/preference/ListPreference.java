@@ -29,16 +29,7 @@ import android.widget.ArrayAdapter;
 import com.ahao.preferencelibrary.R;
 
 
-/**
- * A {@link Preference} that displays a list of entries as
- * a dialog.
- * <p/>
- * This preference will store a string into the SharedPreferences. This string will be the value
- * from the {@link #setEntryValues(CharSequence[])} array.
- *
- * @attr ref android.R.styleable#ListPreference_entries
- * @attr ref android.R.styleable#ListPreference_entryValues
- */
+
 public class ListPreference extends DialogPreference {
     private CharSequence[] mEntries;
     private CharSequence[] mEntryValues;
@@ -85,7 +76,7 @@ public class ListPreference extends DialogPreference {
     /**
      * Sets the human-readable entries to be shown in the list. This will be
      * shown in subsequent dialogs.
-     * <p/>
+     *
      * Each entry must have a corresponding index in
      * {@link #setEntryValues(CharSequence[])}.
      *
